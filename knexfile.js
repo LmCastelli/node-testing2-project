@@ -1,6 +1,6 @@
 // Update with your config settings.
 const common = {
-    client: 'sqlite',
+    client: 'sqlite3',
     useNullAsDefault: true,
     migrations: { directory: './data/migrations'},
     seeds: {directory: './data/seeds'}
@@ -16,7 +16,7 @@ module.exports = {
     testing: {
         ...common,
         connection: {
-            filename: './data/test.db3',
+            filename: './data/looney.db3',
         }
     },
     production: {
